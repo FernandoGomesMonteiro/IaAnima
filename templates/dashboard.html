@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <div class="p-8 min-h-screen">
+        <h1 class="text-3xl font-bold mb-6">Bem-vindo, {{ nome }}</h1>
+        <form action="/dashboard" method="POST" class="space-y-4">
+            <textarea name="mensagem" placeholder="Digite sua mensagem" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-gray-200 focus:outline-none focus:ring focus:ring-blue-500"></textarea>
+            <input type="number" name="nivel_ansiedade" step="0.1" placeholder="Nível de Ansiedade" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-gray-200 focus:outline-none focus:ring focus:ring-blue-500">
+            <input type="number" name="nivel_depressao" step="0.1" placeholder="Nível de Depressão" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-gray-200 focus:outline-none focus:ring focus:ring-blue-500">
+            <button type="submit" class="w-full bg-blue-600 p-3 rounded-lg font-semibold text-white hover:bg-blue-700 transition">Enviar</button>
+        </form>
+        <a href="/logout" class="mt-6 block text-blue-400 hover:underline">Logout</a>
+    </div>
+</body>
+</html>
