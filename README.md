@@ -17,5 +17,5 @@ O classificador pode categorizar uma descrição de sintoma em uma das seguintes
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu_usuario/seu_repositorio.git
-   cd seu_repositorio
+   git clone https://github.com/FernandoGomesMonteiro/IaAnima.git
+   cd .\IaAnima\
